@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trợ lý AI</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="chat-wrapper">
+    <header class="chat-header">
+      <h1>Trợ lý AI</h1>
+    </header>
+    <main id="chat-box" class="chat-box"></main>
+    <footer class="chat-footer">
+      <textarea id="input" placeholder="Nhập tin nhắn..."></textarea>
+      <!-- Phần hiển thị file được chọn -->
+      <div id="file-preview" class="file-preview"></div>
+      <div class="chat-actions">
+        <button id="send-btn">Gửi</button>
+        <label for="file-input" class="file-label">Tải file</label>
+        <input type="file" id="file-input" accept=".txt,.md,.csv,.json" hidden>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
