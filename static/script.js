@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let displayText = `<div class="file-info"><strong>File:</strong> ${uploadedFile.name}</div>`;
         displayText += annotation
           ? `<div class="file-annotation"><em></em> ${annotation}</div>`
-          : `<div class="file-annotation"><em>[Không có chú thích]</em></div>`;
+          : `<div class="file-annotation"><em></em></div>`;
         appendMessage("user-file", displayText);
         
         // Đọc nội dung file và gửi cho AI

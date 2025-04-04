@@ -5,13 +5,13 @@ import os
 from dotenv import load_dotenv
 import json
 
-# 🔄 Tải API Key từ file .env
+# Tải API Key từ file .env
 load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 GEMINI_ENDPOINT = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key={GEMINI_API_KEY}"
 
 app = Flask(__name__, static_folder="static", template_folder="templates")
-CORS(app)  # 🟢 Cho phép frontend gọi API
+CORS(app)  # Cho phép frontend gọi API
 
 @app.route("/")
 def home():
@@ -33,7 +33,7 @@ def chat():
         response = requests.post(GEMINI_ENDPOINT, json=payload)
         result = response.json()
 
-        # 🟢 Debug: In kết quả API ra terminal
+        # Debug: In kết quả API ra terminal
         print("📥 API Response:", json.dumps(result, indent=2, ensure_ascii=False))
 
         if "candidates" in result and len(result["candidates"]) > 0:
