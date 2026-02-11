@@ -24,7 +24,6 @@
     cursor: pointer;
   }
   
-  /* Các style khác (giữ nguyên từ phiên bản trước) */
   
   body {
     font-family: 'Segoe UI', sans-serif;
@@ -151,7 +150,7 @@
   }
   
   .user-file-msg {
-    background: #fff3cd; /* Màu vàng nhạt */
+    background: #fff3cd; 
     border: 1px solid #ffeeba;
     color: #856404;
     align-self: flex-end;
