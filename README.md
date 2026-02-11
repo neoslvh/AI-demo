@@ -1,4 +1,4 @@
-# 🤖 AI Demo – Gemini + Flask Chat App
+# 🤖 Chat Box AI – Gemini + Flask Chat App
 
 A simple AI chat web application built with Flask and Google Gemini API.
 The app supports real-time chat, automatic model detection, and bilingual responses (Vietnamese + English).
@@ -133,7 +133,7 @@ MIT License
 
 ==========================================================
 
-# 🤖 AI Demo – Ứng dụng Chat với Gemini + Flask
+# 🤖 Chat Box AI – Ứng dụng Chat với Gemini + Flask
 
 Ứng dụng chat AI đơn giản được xây dựng bằng Flask và Google Gemini API.
 Hệ thống hỗ trợ trò chuyện thời gian thực, tự động phát hiện model Gemini phù hợp và trả lời song ngữ (Tiếng Việt + Tiếng Anh).
